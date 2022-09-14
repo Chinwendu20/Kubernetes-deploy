@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  env: {{ .Values.data.env }}
+kind: ConfigMap
+metadata:
+  name: ayaloconfig
+  namespace: {{ .Values.namespace }}
+
